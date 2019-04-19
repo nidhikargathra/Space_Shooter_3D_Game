@@ -539,7 +539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameUI: {fileID: 1634307232}
   mainMenu: {fileID: 933631317}
-  playerPrefab: {fileID: 1481683582307506, guid: b5dd7d3dafd06d64ebebff414dd63bdd,
+  playerPrefab: {fileID: 1835959438931264, guid: 7357b5e9b25e38446bdfa7860b7a94ab,
     type: 2}
   playerStartPosition: {fileID: 801458743}
 --- !u!114 &849157485
