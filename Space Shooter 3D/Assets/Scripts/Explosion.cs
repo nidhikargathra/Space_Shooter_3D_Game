@@ -30,7 +30,7 @@ public class Explosion : MonoBehaviour {
     public void AddForce(Vector3 hitPosition, Transform hitSource)
     {
         IveBeenHit(hitPosition);
-        Debug.LogWarning("AddForce Called: "+ gameObject.name + " >> " + hitSource.name);
+        //Debug.LogWarning("AddForce Called: "+ gameObject.name + " >> " + hitSource.name);
         if (rigidBody == null)
             return;
 

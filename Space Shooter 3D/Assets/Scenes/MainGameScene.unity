@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   defaultDistance: {x: 0, y: 5, z: -15}
-  distanceDamp: 0.2
+  distanceDamp: 0.1
   Velocity: {x: 1, y: 1, z: 1}
 --- !u!81 &2067867639
 AudioListener:
