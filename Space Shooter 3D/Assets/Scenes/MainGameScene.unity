@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1074,7 +1074,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1507291765148936, guid: 733d849ef0f6b0c438cced4511395c71, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114409230345078328, guid: 733d849ef0f6b0c438cced4511395c71,
         type: 2}
@@ -1405,6 +1405,8 @@ MonoBehaviour:
   numberOfAsteroidsOnAnAxis: 5
   gridSpacing: 70
   asteroidPrefab: {fileID: 114104771800002030, guid: 9638491b842834f44bab2abe9846c9cb,
+    type: 2}
+  pickupPrefab: {fileID: 1921378718320382, guid: 14dd014c06549e44997f8df2a811d6b5,
     type: 2}
 --- !u!1 &2067867637
 GameObject:

@@ -6,8 +6,10 @@ public class AsteroidManager : MonoBehaviour {
     [SerializeField] int numberOfAsteroidsOnAnAxis = 5;
     [SerializeField] int gridSpacing = 25;
     [SerializeField] Asteroid asteroidPrefab;
+    [SerializeField] GameObject pickupPrefab;
 
     List<Asteroid> asteroids = new List<Asteroid>();
+    List<GameObject> pickups = new List<GameObject>();
 
     private void Start()
     {
@@ -18,12 +20,16 @@ public class AsteroidManager : MonoBehaviour {
     {
         EventManager.onStartGame += PlaceAsteroids;
         EventManager.onPlayerDeath += DestroyAsteroids;
+        EventManager.onPlayerDeath += DestroyPickups;
+        EventManager.onRespawnPickup += PlacePickup;
     }
 
     private void OnDisable()
     {
         EventManager.onStartGame -= PlaceAsteroids;
         EventManager.onPlayerDeath -= DestroyAsteroids;
+        EventManager.onPlayerDeath -= DestroyPickups;
+        EventManager.onRespawnPickup -= PlacePickup;
     }
 
 
@@ -39,6 +45,7 @@ public class AsteroidManager : MonoBehaviour {
                 }
             }
         }
+        PlacePickup();
     }
 
     void DestroyAsteroids()
@@ -46,6 +53,13 @@ public class AsteroidManager : MonoBehaviour {
         foreach (Asteroid ast in asteroids)
             ast.SelfDestruct();
         asteroids.Clear();
+    }
+
+    void DestroyPickups()
+    {
+        foreach (GameObject obj in pickups)
+            Destroy(obj);
+        pickups.Clear();
     }
 
     void InstantiateAsteroid(int x, int y, int z)
@@ -59,6 +73,14 @@ public class AsteroidManager : MonoBehaviour {
         asteroids.Add(temp);
     }
 
+    void PlacePickup()
+    {
+        int rnd = Random.Range(0, asteroids.Count);
+        GameObject temp = Instantiate(pickupPrefab, asteroids[rnd].transform.position, Quaternion.identity);
+        pickups.Add(temp);
+        Destroy(asteroids[rnd].gameObject);
+        asteroids.RemoveAt(rnd);
+    }
 
     float AsteroidOffset()
     {

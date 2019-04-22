@@ -8,14 +8,10 @@ public class Score : MonoBehaviour {
     [SerializeField] int score;
     [SerializeField] int hiScore;
 
-    private void Start()
-    {
-        LoadHiScore();
-    }
-
     private void OnEnable()
     {
         EventManager.onStartGame += ResetScore;
+        EventManager.onStartGame += LoadHiScore;
         EventManager.onPlayerDeath += CheckNewHiScore;
         EventManager.onScorePoints += AddScore;
     }
@@ -23,6 +19,7 @@ public class Score : MonoBehaviour {
     private void OnDisable()
     {
         EventManager.onStartGame -= ResetScore;
+        EventManager.onStartGame -= LoadHiScore;
         EventManager.onPlayerDeath -= CheckNewHiScore;
         EventManager.onScorePoints -= AddScore;
     }
@@ -31,11 +28,15 @@ public class Score : MonoBehaviour {
     {
         score = 0;
         DisplayScore();
+        LoadHiScore();
+        DisplayHiScore();
+        CheckNewHiScore();
     }
 
     void AddScore(int amt)
     {
         score += amt;
+        DisplayScore();
     }
 
     void DisplayScore()
