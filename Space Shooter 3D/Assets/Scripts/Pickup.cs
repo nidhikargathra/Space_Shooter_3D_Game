@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Pickup : MonoBehaviour {
     [SerializeField] float rotationOffset = 50f;
+    bool gotHit = false;
 
     static int points = 100;
     Vector3 randomRotation;
@@ -35,9 +36,14 @@ public class Pickup : MonoBehaviour {
 
     public void PickupHit()
     {
-        Debug.Log("Player hit us");
-        EventManager.ScorePoints(points);
-        EventManager.ReSpawnPickup();
-        Destroy(gameObject);
+        if(!gotHit)
+        {
+            gotHit = true;
+            Debug.Log("Player hit us");
+
+            EventManager.ScorePoints(points);
+            EventManager.ReSpawnPickup();
+            Destroy(gameObject);
+        }
     }
 }
