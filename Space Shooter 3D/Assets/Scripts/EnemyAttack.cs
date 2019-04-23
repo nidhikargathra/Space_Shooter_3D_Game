@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour {
+public class EnemyAttack : MonoBehaviour
+{
     [SerializeField] Transform target;
     [SerializeField] Laser laser;
 
@@ -23,7 +24,7 @@ public class EnemyAttack : MonoBehaviour {
         float angle = Vector3.Angle(transform.forward, directionToTarget);
 
         //if in range
-        if(Mathf.Abs(angle) > 90 && Mathf.Abs(angle) < 270)
+        if (Mathf.Abs(angle) > 90 && Mathf.Abs(angle) < 270)
         {
             //Debug.DrawLine(transform.position, target.position, Color.green);
             return true;
@@ -36,8 +37,8 @@ public class EnemyAttack : MonoBehaviour {
     {
         RaycastHit hit;
         Vector3 direction = target.position - transform.position;
-        
-        if(Physics.Raycast(laser.transform.position, direction, out hit, laser.Distance))
+
+        if (Physics.Raycast(laser.transform.position, direction, out hit, laser.Distance))
         {
             if (hit.transform.CompareTag("Player"))
             {
@@ -62,7 +63,7 @@ public class EnemyAttack : MonoBehaviour {
             if (temp != null)
                 target = temp.transform;
         }
-         
+
         if (target == null)
             return false;
 

@@ -40,6 +40,9 @@ GameObject:
   - component: {fileID: 114607624741594068}
   - component: {fileID: 96701772150916800}
   - component: {fileID: 114731816116421958}
+  - component: {fileID: 114712832969260566}
+  - component: {fileID: 114021537082263050}
+  - component: {fileID: 54038061863690034}
   m_Layer: 0
   m_Name: Enemy Droid
   m_TagString: Enemy
@@ -148,6 +151,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1728825463285334}
   m_Mesh: {fileID: 4300000, guid: d8cf9ba52095a4f4bb35e68774cfa634, type: 3}
+--- !u!54 &54038061863690034
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315654705314044}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &64112955612262296
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -307,6 +325,21 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114021537082263050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315654705314044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a908ecc02d7e7744b27692b0c3d6703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currHealth: 0
+  regenerationRate: 0
+  regenerateAmount: 0
 --- !u!114 &114607624741594068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,6 +356,22 @@ MonoBehaviour:
   rotationalDamp: 1.25
   raycastOffset: 2.5
   detectionDistance: 20
+--- !u!114 &114712832969260566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315654705314044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fabb928eee67c549a6024a34ee03ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1038054049019692, guid: d804689c07203264a8078ffa87c0d4fa, type: 2}
+  blowUp: {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9, type: 2}
+  rigidBody: {fileID: 54038061863690034}
+  shield: {fileID: 114021537082263050}
+  laserHitModifier: 10
 --- !u!114 &114731816116421958
 MonoBehaviour:
   m_ObjectHideFlags: 1

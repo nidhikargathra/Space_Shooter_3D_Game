@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour {
     private void OnDisable()
     {
         EventManager.onStartGame -= StartSpawning;
-        EventManager.onPlayerDeath = StopSpawning;
+        EventManager.onPlayerDeath -= StopSpawning;
     }
     void SpawnEnemy()
     {
