@@ -30,7 +30,6 @@ public class Shield : MonoBehaviour {
         currHealth -= dmg;
         if (currHealth < 0)
             currHealth = 0;
-        Debug.Log("hit :"+transform.name);
         //EventManager.TakeDamage((float)currHealth /(float)maxHealth);
 
         if (currHealth < 1)

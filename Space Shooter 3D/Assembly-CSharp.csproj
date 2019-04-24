@@ -83,6 +83,7 @@
     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Scripts\ScrollingUVs_PDS.cs" />
     <Compile Include="Assets\Scripts\Asteroid.cs" />
     <Compile Include="Assets\Scripts\AsteroidManager.cs" />
+    <Compile Include="Assets\Scripts\CrossHair.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />

@@ -4,11 +4,23 @@ using UnityEngine;
 
 [DisallowMultipleComponent]
 public class PlayerMovement : MonoBehaviour {
+
+    [System.Serializable]
+    public class MouseInput
+    {
+        public Vector2 damping = new Vector2(1,1);
+        public Vector2 sensitivity = new Vector2(1,1);
+    }
+    [SerializeField] float mouseSpeed = 5;
+    [SerializeField] MouseInput mouseControl;
+
     [SerializeField] float movementSpeed = 50f;
     [SerializeField] float turnSpeed = 60f;
     [SerializeField] Thruster[] thruster;
 
     Transform myT;
+    Vector2 mouseInput;
+    Vector2 playerInput;
 
     void Awake()
     {
@@ -18,8 +30,19 @@ public class PlayerMovement : MonoBehaviour {
     {
         Thrust();
         Turn();
+        MouseMovement();
     }
 
+    void MouseMovement()
+    {
+        playerInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+
+        mouseInput.x = Mathf.Lerp(mouseInput.x, playerInput.x, 1f / mouseControl.damping.x);
+        mouseInput.y = Mathf.Lerp(mouseInput.y, playerInput.y, 1f / mouseControl.damping.y);
+
+        myT.Rotate(Vector3.up * mouseInput.x * mouseControl.sensitivity.x);
+        myT.Rotate(Vector3.left * mouseInput.y * mouseControl.sensitivity.y);
+    }
     void Turn()
     {
         float yaw = turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
@@ -39,12 +62,5 @@ public class PlayerMovement : MonoBehaviour {
             foreach (Thruster t in thruster)
                 t.Intensity(Input.GetAxis("Vertical"));
         }
-
-        //if(Input.GetKeyDown(KeyCode.W))
-        //    foreach(Thruster t in thruster)
-        //        t.Activate();
-        //else if (Input.GetKeyUp(KeyCode.W))
-        //    foreach (Thruster t in thruster)
-        //        t.Activate(false);
     }
 }

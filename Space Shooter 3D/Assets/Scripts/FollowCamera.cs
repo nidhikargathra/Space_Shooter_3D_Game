@@ -50,7 +50,7 @@ public class FollowCamera : MonoBehaviour {
             GameObject temp = GameObject.FindWithTag("Player");
             if (temp != null)
             {
-                Debug.Log("Found player: "+temp.name);
+                //Debug.Log("Found player: "+temp.name);
 
                 target = temp.transform;
             }
