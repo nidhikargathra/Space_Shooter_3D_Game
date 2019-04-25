@@ -17,6 +17,7 @@ public class PlayerInput : MonoBehaviour {
         }
         if(Input.GetKeyDown(KeyCode.LeftControl))
         {
+            print("hit fire key");
             rocket.Fire();
         }
     }

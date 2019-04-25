@@ -1716,7 +1716,7 @@ MonoBehaviour:
   maxHealth: 50
   currHealth: 0
   regenerationRate: 2
-  regenerateAmount: 5
+  regenerateAmount: 0
 --- !u!114 &114889574244342566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1740,7 +1740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rateOfFire: 1
-  projectile: {fileID: 114234553761504404, guid: ce1fac0dc0934204d8da66f49cf880de,
+  projectile: {fileID: 114401213566003204, guid: 93e0ad8c5e0f4684abde877da9837ab9,
     type: 2}
   muzzle: {fileID: 0}
   canFire: 0
