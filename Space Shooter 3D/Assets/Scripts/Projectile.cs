@@ -24,5 +24,6 @@ public class Projectile : MonoBehaviour
         if (targetShield == null)
             return;
         targetShield.TakeDamage();
+        Destroy(gameObject);
     }
 }
