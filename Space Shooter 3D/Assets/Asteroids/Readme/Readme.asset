@@ -12,37 +12,32 @@ MonoBehaviour:
   m_Name: Readme
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: 6756ed7b80223ac4e8f026ce27541de4, type: 3}
-  title: Star Sparrow Modular Spaceship
+  title: Missiles
   sections:
-  - heading: Complete Collection
-    text: This spaceship set is a free sample from our Ultimate Spaceships Creator.
-    linkText: Click here to get the complete collection!
-    url: http://u3d.as/J0F
-  - heading: Build Your Own Spaceships
-    text: You can build your own spaceships by quickly modifying the examples located
-      in the Examples Modular scene. In addition, you can also assemble your own spaceship
-      from scratch by opening up the modules scene and moving/rotating/scaling and
-      duplicating the modules until you have something you are happy with.
-    linkText: 
-    url: 
-  - heading: Unified Materials
-    text: 'The materials listed under unified are compatible when using different
-      spaceships from our Unity Asset Store collection. '
+  - heading: More Sci-Fi Items?
+    text: 
     linkText: 
     url: 
   - heading: 
-    text: These materials enable you to combine modules from different spaceship sets
-      included in our Ultimate Spaceships Creator, or to create factions with a unified
-      color.
-    linkText: 
-    url: 
-  - heading: Changing Colors
-    text: If all of the included materials in this pack are not enough, you can feel
-      free to modify the included Substance Painter file and export new textures,
-      or to use the "mask" texture with the neutral color texture to change color
-      in Photoshop or with script.
-    linkText: 
-    url: 
+    text: 
+    linkText: Free Assets On Our Store Page
+    url: https://assetstore.unity.com/publishers/24304
+  - heading: 
+    text: 
+    linkText: Ultimate Spaceships Creator
+    url: http://u3d.as/J0F
+  - heading: 
+    text: 
+    linkText: Modular Pick Up Items
+    url: http://u3d.as/WJ2
+  - heading: 
+    text: 
+    linkText: Space Mines
+    url: http://u3d.as/Vqb
+  - heading: 
+    text: 
+    linkText: Planets
+    url: http://u3d.as/12tt
   - heading: Can I Use This Asset in My Game?
     text: Yes! You can use this asset in your free or commercial game. We wish you
       all the best in all of your projects!

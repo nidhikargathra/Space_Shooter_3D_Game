@@ -26,7 +26,6 @@ public class Shooter : MonoBehaviour {
         nextFireAllowed = Time.time + rateOfFire;
 
         //instantiate the projectile
-        print("Fire!!!!!");
         Instantiate(projectile, muzzle.position, muzzle.rotation);
 
         canFire = true;
