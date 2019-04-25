@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4341710258959304}
   - component: {fileID: 33331743255433198}
   - component: {fileID: 23409154459069880}
-  - component: {fileID: 65518806599033432}
+  - component: {fileID: 65272444892622374}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -130,7 +130,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65518806599033432
+--- !u!65 &65272444892622374
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

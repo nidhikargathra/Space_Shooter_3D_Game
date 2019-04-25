@@ -23,10 +23,14 @@ public class Explosion : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+        print("I collided with: " + collision.gameObject.name);
         foreach (ContactPoint contact in collision.contacts)
             IveBeenHit(contact.point);
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        IveBeenHit(other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position));
+    }
     public void AddForce(Vector3 hitPosition, Transform hitSource)
     {
         IveBeenHit(hitPosition);

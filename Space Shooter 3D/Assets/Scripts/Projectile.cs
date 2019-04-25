@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Projectile : MonoBehaviour {
+public class Projectile : MonoBehaviour
+{
     [SerializeField] float speed;
     [SerializeField] float timeToLive;
     [SerializeField] float damage;
@@ -19,6 +20,9 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Hit: " + other.name);
+        Shield targetShield = other.transform.GetComponentInParent<Shield>();
+        if (targetShield == null)
+            return;
+        targetShield.TakeDamage();
     }
 }
