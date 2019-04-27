@@ -39,22 +39,16 @@ public class Pickup : MonoBehaviour {
         if(!gotHit)
         {
             gotHit = true;
-            Debug.Log("Player hit me: "+transform.name);
+            string pickupName = transform.name.ToString();
+            Debug.Log("Player hit me: " + pickupName);
 
             EventManager.ScorePoints(points);
-            switch (transform.name)
-            {
-                case "Battery":
-                    {
-                        EventManager.ReSpawnPickup();
-                        break;
-                    }
-                case "Orb":
-                    {
 
-                        break;
-                    }
-            }
+            if (pickupName.Contains("Battery"))
+                EventManager.ReSpawnPickup();
+            else if (pickupName.Contains("Orb"))
+                EventManager.CollectOrbs();
+            
             Destroy(gameObject);
         }
     }

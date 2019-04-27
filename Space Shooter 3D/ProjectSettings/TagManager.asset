@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Pickup
   - Muzzle
+  - Orb
   layers:
   - Default
   - TransparentFX

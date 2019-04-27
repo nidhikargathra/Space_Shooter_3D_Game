@@ -568,10 +568,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 511810265}
   hiScoreText: {fileID: 1266474876}
-  orbScoreText: {fileID: 0}
+  orbScoreText: {fileID: 1293597099}
   score: 0
   hiScore: 0
-  totalNumberOfOrbs: 0
+  totalNumberOfOrbs: 3
   numberOfOrbsCollected: 0
 --- !u!1 &933631317
 GameObject:
@@ -1526,7 +1526,9 @@ MonoBehaviour:
   gridSpacing: 70
   asteroidPrefab: {fileID: 114104771800002030, guid: 9638491b842834f44bab2abe9846c9cb,
     type: 2}
-  pickupPrefab: {fileID: 1921378718320382, guid: 14dd014c06549e44997f8df2a811d6b5,
+  pickupBatteryPrefab: {fileID: 1921378718320382, guid: 14dd014c06549e44997f8df2a811d6b5,
+    type: 2}
+  pickupOrbPrefab: {fileID: 1629003921146438, guid: 4405b16b0ca15ff43b88e30d16be39e0,
     type: 2}
 --- !u!1 &2067867637
 GameObject:

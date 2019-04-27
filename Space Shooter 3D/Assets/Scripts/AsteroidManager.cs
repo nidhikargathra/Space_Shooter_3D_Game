@@ -6,7 +6,8 @@ public class AsteroidManager : MonoBehaviour {
     [SerializeField] int numberOfAsteroidsOnAnAxis = 5;
     [SerializeField] int gridSpacing = 25;
     [SerializeField] Asteroid asteroidPrefab;
-    [SerializeField] GameObject pickupPrefab;
+    [SerializeField] GameObject pickupBatteryPrefab;
+    [SerializeField] GameObject pickupOrbPrefab;
 
     List<Asteroid> asteroids = new List<Asteroid>();
     List<GameObject> pickups = new List<GameObject>();
@@ -76,7 +77,25 @@ public class AsteroidManager : MonoBehaviour {
     void PlacePickup()
     {
         int rnd = Random.Range(0, asteroids.Count);
-        GameObject temp = Instantiate(pickupPrefab, asteroids[rnd].transform.position, Quaternion.identity);
+        GameObject temp = Instantiate(pickupBatteryPrefab, asteroids[rnd].transform.position, Quaternion.identity);
+        pickups.Add(temp);
+        Destroy(asteroids[rnd].gameObject);
+        asteroids.RemoveAt(rnd);
+
+        rnd = Random.Range(0, asteroids.Count);
+        temp = Instantiate(pickupOrbPrefab, asteroids[rnd].transform.position, Quaternion.identity);
+        pickups.Add(temp);
+        Destroy(asteroids[rnd].gameObject);
+        asteroids.RemoveAt(rnd);
+
+        rnd = Random.Range(0, asteroids.Count);
+        temp = Instantiate(pickupOrbPrefab, asteroids[rnd].transform.position, Quaternion.identity);
+        pickups.Add(temp);
+        Destroy(asteroids[rnd].gameObject);
+        asteroids.RemoveAt(rnd);
+
+        rnd = Random.Range(0, asteroids.Count);
+        temp = Instantiate(pickupOrbPrefab, asteroids[rnd].transform.position, Quaternion.identity);
         pickups.Add(temp);
         Destroy(asteroids[rnd].gameObject);
         asteroids.RemoveAt(rnd);
