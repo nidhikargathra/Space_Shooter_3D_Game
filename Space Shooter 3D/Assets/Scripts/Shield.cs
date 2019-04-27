@@ -30,11 +30,11 @@ public class Shield : MonoBehaviour {
         currHealth -= dmg;
         if (currHealth < 0)
             currHealth = 0;
-        //EventManager.TakeDamage((float)currHealth /(float)maxHealth);
+        EventManager.TakeDamage((float)currHealth /(float)maxHealth);
 
         if (currHealth < 1)
         {
-            //EventManager.PlayerDeath();
+            EventManager.PlayerDeath();
             GetComponent<Explosion>().BlowUp();
 
             Debug.Log("I b ded :(");
