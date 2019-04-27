@@ -4,9 +4,13 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour {
     [SerializeField] Text scoreText;
     [SerializeField] Text hiScoreText;
+    [SerializeField] Text orbScoreText;
 
     [SerializeField] int score;
     [SerializeField] int hiScore;
+    [SerializeField] int totalNumberOfOrbs;
+
+    public int numberOfOrbsCollected;
 
     private void OnEnable()
     {
@@ -14,6 +18,7 @@ public class Score : MonoBehaviour {
         EventManager.onStartGame += LoadHiScore;
         EventManager.onPlayerDeath += CheckNewHiScore;
         EventManager.onScorePoints += AddScore;
+        EventManager.onCollectOrb += CollectOrb;
     }
 
     private void OnDisable()
@@ -22,10 +27,12 @@ public class Score : MonoBehaviour {
         EventManager.onStartGame -= LoadHiScore;
         EventManager.onPlayerDeath -= CheckNewHiScore;
         EventManager.onScorePoints -= AddScore;
+        EventManager.onCollectOrb -= CollectOrb;
     }
 
     void ResetScore()
     {
+        numberOfOrbsCollected = 0;
         score = 0;
         DisplayScore();
         LoadHiScore();
@@ -61,5 +68,15 @@ public class Score : MonoBehaviour {
     void DisplayHiScore()
     {
         hiScoreText.text = hiScore.ToString();
+    }
+
+    void CollectOrb()
+    {
+        numberOfOrbsCollected++;
+        orbScoreText.text = numberOfOrbsCollected.ToString() +"/"+ totalNumberOfOrbs.ToString();
+        if(numberOfOrbsCollected == totalNumberOfOrbs)
+        {
+            print("all orbs collected");
+        }
     }
 }

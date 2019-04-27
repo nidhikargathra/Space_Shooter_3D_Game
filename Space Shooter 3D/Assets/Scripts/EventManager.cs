@@ -14,6 +14,9 @@ public class EventManager : MonoBehaviour {
     public delegate void ScorePointsDelegate(int score);
     public static ScorePointsDelegate onScorePoints;
 
+    public delegate void CollectOrbsDelegate();
+    public static CollectOrbsDelegate onCollectOrb;
+
     public static void StartGame()
     {
         if (onStartGame != null)
@@ -28,22 +31,24 @@ public class EventManager : MonoBehaviour {
 
     public static void TakeDamage(float percent)
     {
-        //Debug.Log("take damage percent: " +percent);
         if (onTakeDamage != null)
             onTakeDamage(percent);
     }
 
     public static void PlayerDeath()
     {
-        //Debug.Log("Player is dead");
         if (onPlayerDeath != null)
             onPlayerDeath();
     }
 
     public static void ScorePoints(int score)
     {
-        //Debug.Log("take damage percent: " +percent);
         if (onScorePoints != null)
             onScorePoints(score);
+    }
+    public static void CollectOrbs()
+    {
+        if (onCollectOrb != null)
+            onCollectOrb();
     }
 }
