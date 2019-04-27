@@ -73,7 +73,7 @@ public class Score : MonoBehaviour {
     void CollectOrb()
     {
         numberOfOrbsCollected++;
-        orbScoreText.text = numberOfOrbsCollected.ToString() +"/"+ totalNumberOfOrbs.ToString();
+        orbScoreText.text = "Orbs Collected: " + numberOfOrbsCollected.ToString() +"/"+ totalNumberOfOrbs.ToString();
         if(numberOfOrbsCollected == totalNumberOfOrbs)
         {
             print("all orbs collected");
