@@ -154,5 +154,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  timeToLive: 100
+  timeToLive: 5
   damage: 5
