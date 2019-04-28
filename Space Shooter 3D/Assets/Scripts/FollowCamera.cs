@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour {
     [SerializeField] Transform target;
-    [SerializeField] Vector3 defaultDistance = new Vector3(0f, 2f, -5f);
+    [SerializeField] Vector3 defaultDistance = new Vector3(0f, 5f, -15f);
     [SerializeField] float distanceDamp = 0.2f;
 //    [SerializeField] float rotationalDamp = 5f;
 
