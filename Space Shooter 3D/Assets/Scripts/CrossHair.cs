@@ -7,14 +7,35 @@ public class CrossHair : MonoBehaviour {
     [SerializeField] int size;
     [SerializeField] float maxAngle;
     [SerializeField] float minAngle;
+    [SerializeField] GameObject rocket;
 
     float lookHeight;
+    Transform rocketT;
+    float maxDistance;
 
+    private void Start()
+    {
+        rocketT = rocket.transform;
+    }
     public void LookHeight(float value)
     {
         lookHeight += value;
         if (lookHeight > maxAngle || lookHeight < minAngle)
             lookHeight -= value;
+    }
+    private void Update()
+    {
+        CastRay();
+    }
+    void CastRay()
+    {
+        RaycastHit hit;
+        Vector3 fwd = rocketT.TransformDirection(Vector3.forward) * maxDistance;
+
+        if (Physics.Raycast(rocketT.position, fwd, out hit))
+        {
+            transform.position = hit.point;
+        }
     }
 
     private void OnGUI()
