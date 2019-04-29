@@ -38,6 +38,6 @@ public class GameUI : MonoBehaviour {
     {
         mainMenu.SetActive(false);
         gameUI.SetActive(true);
-        Instantiate(playerPrefab, playerStartPosition.transform.position, playerStartPosition.transform.rotation);
+        //Instantiate(playerPrefab, playerStartPosition.transform.position, playerStartPosition.transform.rotation);
     }
 }

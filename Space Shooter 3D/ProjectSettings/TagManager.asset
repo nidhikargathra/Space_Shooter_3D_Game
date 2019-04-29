@@ -17,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - 
-  - 
+  - Asteroid
+  - Player
+  - Projectile
   - 
   - 
   - 

@@ -8,7 +8,10 @@ namespace Assets.Code
     {
         private Camera camera;
         public BasicWeapon basicWeapon;
+        public Destroyable destroyable;
 
+        public float Health { get { return destroyable.Health; } }
+        public float MAxHealth { get { return destroyable.MaxHealth; } }
 
         private PlayerCamera _camera;
         private PlayerController _controller;
@@ -16,6 +19,7 @@ namespace Assets.Code
         private PlayerWeapons _weapons;
 
         private IEnumerable<BasicWeaponMount> _mounts;
+        
 
         private void Awake()
         {

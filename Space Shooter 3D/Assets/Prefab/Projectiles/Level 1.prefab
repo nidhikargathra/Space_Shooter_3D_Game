@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 54931490644646416}
   - component: {fileID: 136317857744576658}
   - component: {fileID: 114571425650334038}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4696236883384976}
   - component: {fileID: 33692964494922092}
   - component: {fileID: 23239469100970656}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}

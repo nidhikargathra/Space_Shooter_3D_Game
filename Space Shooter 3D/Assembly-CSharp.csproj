@@ -82,8 +82,11 @@
     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Scripts\ScrollingUVs_PDS.cs" />
     <Compile Include="Assets\Scripts\Asteroid.cs" />
     <Compile Include="Assets\Scripts\AsteroidManager.cs" />
+    <Compile Include="Assets\Scripts\Code\Asteroid1.cs" />
+    <Compile Include="Assets\Scripts\Code\AsteroidManager1.cs" />
     <Compile Include="Assets\Scripts\Code\BasicWeapon.cs" />
     <Compile Include="Assets\Scripts\Code\BasicWeaponMount.cs" />
+    <Compile Include="Assets\Scripts\Code\Destroyable.cs" />
     <Compile Include="Assets\Scripts\Code\Player.cs" />
     <Compile Include="Assets\Scripts\Code\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Code\PlayerController.cs" />
