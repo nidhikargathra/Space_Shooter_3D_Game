@@ -37,7 +37,7 @@ public class GameUI : MonoBehaviour {
     void ShowGameUI()
     {
         mainMenu.SetActive(false);
-        //gameUI.SetActive(true);
+        gameUI.SetActive(true);
         //Instantiate(playerPrefab, playerStartPosition.transform.position, playerStartPosition.transform.rotation);
     }
 }

@@ -21,6 +21,7 @@ namespace Assets.Code
 
         public void OnGUI()
         {
+            GUI.Label(new Rect(10, 10, 200, 40), string.Format("{0} points", GameManagerInstance.Instance.Points));
             GUI.DrawTexture(
                 new Rect(
                     _controller.MousePosition.x - (CurrentCursorSize / 2),

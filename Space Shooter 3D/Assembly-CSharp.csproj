@@ -87,6 +87,9 @@
     <Compile Include="Assets\Scripts\Code\BasicWeapon.cs" />
     <Compile Include="Assets\Scripts\Code\BasicWeaponMount.cs" />
     <Compile Include="Assets\Scripts\Code\Destroyable.cs" />
+    <Compile Include="Assets\Scripts\Code\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Code\GameManagerInstance.cs" />
+    <Compile Include="Assets\Scripts\Code\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Code\Player.cs" />
     <Compile Include="Assets\Scripts\Code\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Code\PlayerController.cs" />
@@ -94,7 +97,10 @@
     <Compile Include="Assets\Scripts\Code\PlayerWeapons.cs" />
     <Compile Include="Assets\Scripts\Code\Projectile1.cs" />
     <Compile Include="Assets\Scripts\Code\ProjectileWeapon.cs" />
+    <Compile Include="Assets\Scripts\Code\Spinner.cs" />
     <Compile Include="Assets\Scripts\Code\Targetable.cs" />
+    <Compile Include="Assets\Scripts\Code\Waypoint.cs" />
+    <Compile Include="Assets\Scripts\Code\WaypointManager.cs" />
     <Compile Include="Assets\Scripts\CrossHair.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />

@@ -6,13 +6,14 @@ namespace Assets.Code
 {
     public class Player : MonoBehaviour
     {
-        private Camera camera;
         public BasicWeapon basicWeapon;
         public Destroyable destroyable;
 
         public float Health { get { return destroyable.Health; } }
-        public float MAxHealth { get { return destroyable.MaxHealth; } }
+        public float MaxHealth { get { return destroyable.MaxHealth; } }
+        public float MinimumVelocity { get { return _controller.MinimumVelocity; } set { _controller.MinimumVelocity = value; } }
 
+        private Camera camera;
         private PlayerCamera _camera;
         private PlayerController _controller;
         private PlayerGUI _playerGUI;
@@ -51,5 +52,10 @@ namespace Assets.Code
         {
             _playerGUI.OnGUI();
         }
+
+        //public void Destroyed()
+        //{
+
+        //}
     }
 }

@@ -8,6 +8,7 @@ namespace Assets.Code
     {
         private List<Asteroid1> _asteroids;
         private Player _player;
+        private LevelManager _levelManager;
 
         public Asteroid1 AsteroidPrefab;
 
@@ -18,6 +19,7 @@ namespace Assets.Code
         {
             _asteroids = new List<Asteroid1>();
             _player = (Player)FindObjectOfType(typeof(Player));
+            _levelManager = FindObjectOfType<LevelManager>();
         }
         private void Start()
         {
@@ -32,6 +34,8 @@ namespace Assets.Code
         private void LateUpdate()
         {
             var totalVisible = 0;
+            if (_player == null)
+                return;
             foreach(var asteroid in _asteroids.Where(a => a.IsActive))
             {
                 asteroid.UpdatePlayerPosition(_player.transform.position);
@@ -82,13 +86,14 @@ namespace Assets.Code
             var position = Camera.main.ViewportToWorldPoint(new Vector3(
                 Random.Range(-.5f, 1.5f),
                 Random.Range(-.5f, 1.5f),
-                (Random.Range(0f, 1f) * 300) + 150));
+                (Random.Range(0f, 1f) * 300) + 200));
 
             asteroid.Init(position, rotation, direction, scale, velocity);
         }
 
         public void AsteroidDestroyed(Asteroid1 asteroid1)
         {
+            _levelManager.AsteroidDestroyedByPlayer(asteroid1);
             asteroid1.Deactivate();
 
             if (asteroid1.Level <= 3)

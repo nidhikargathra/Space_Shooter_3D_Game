@@ -90,6 +90,8 @@ namespace Assets.Code
             if (shield == null)
                 return;
             shield.TakeDamage(Level * 50 / 3);
+
+            _destroyable.TakeDamage(_destroyable.Health, other.gameObject);
         }
     }
 }
