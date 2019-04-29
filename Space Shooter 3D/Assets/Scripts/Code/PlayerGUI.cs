@@ -8,6 +8,8 @@ namespace Assets.Code
     {
         public float CurrentCursorSize = 20f;
         public static Texture2D image = (Texture2D) Resources.Load("crosshair");
+        public static Texture2D OffscreenIndicatorImage = (Texture2D)Resources.Load("OffscreenIndicator");
+        public static Texture2D TargetSquareImage = (Texture2D)Resources.Load("TargetSquare");
 
         private PlayerController _controller;
 

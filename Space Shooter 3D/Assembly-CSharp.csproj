@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\Code\PlayerWeapons.cs" />
     <Compile Include="Assets\Scripts\Code\Projectile1.cs" />
     <Compile Include="Assets\Scripts\Code\ProjectileWeapon.cs" />
+    <Compile Include="Assets\Scripts\Code\Targetable.cs" />
     <Compile Include="Assets\Scripts\CrossHair.cs" />
     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
