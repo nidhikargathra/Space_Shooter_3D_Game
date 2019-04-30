@@ -25,9 +25,9 @@ namespace Assets.Code
 
         public void WaypointsHitByPlayer(Waypoint waypoint)
         {
-            if(waypoint.next == null)
+            if (waypoint.next == null)
             {
-                GameManagerInstance.Instance.Points += (int) Mathf.Ceil(TimeLeft) * 10;
+                GameManagerInstance.Instance.Points += (int)Mathf.Ceil(TimeLeft) * 10;
                 if (!string.IsNullOrEmpty(NextLevel))
                 {
                     if (GameManagerInstance.Instance.IsDebug)
@@ -41,5 +41,11 @@ namespace Assets.Code
 
             TimeLeft += waypoint.TimeModifier;
         }
+
+        public void PlayerDied()
+        {
+            GameManagerInstance.Instance.EndGame(false);
+        }
     }
+
 }
