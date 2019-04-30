@@ -313,3 +313,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstLevel: Level1
+  Background: {fileID: 2800000, guid: 7d02467ad1eac1d45adebccd24620bc0, type: 3}

@@ -23,7 +23,6 @@ public class Explosion : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("I collided with: " + collision.gameObject.name);
         foreach (ContactPoint contact in collision.contacts)
             IveBeenHit(contact.point);
     }

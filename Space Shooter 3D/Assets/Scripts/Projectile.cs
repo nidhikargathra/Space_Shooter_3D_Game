@@ -25,7 +25,6 @@ public class Projectile : MonoBehaviour
         Shield targetShield = other.transform.GetComponentInParent<Shield>();
         if (targetShield == null)
             return;
-        print("shield found: "+targetShield.gameObject.name);
         targetShield.TakeDamage(damage);
         Destroy(gameObject);
     }
