@@ -8,6 +8,7 @@ namespace Assets.Code
     {
         public BasicWeapon basicWeapon;
         public Destroyable destroyable;
+        public AudioSource EngineAudio;
 
         public float Health { get { return destroyable.Health; } }
         public float MaxHealth { get { return destroyable.MaxHealth; } }
@@ -46,6 +47,8 @@ namespace Assets.Code
             _controller.Update();
             _camera.Update();
             _weapons.Update();
+
+            EngineAudio.pitch = _controller.CurrentVelocity / (_controller.MinimumVelocity + _controller.MaxVariableVelocity + _controller.AfterBurnerModifier);
         }
         private void OnGUI()
         {
