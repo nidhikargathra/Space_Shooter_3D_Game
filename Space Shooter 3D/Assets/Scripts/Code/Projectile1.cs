@@ -9,6 +9,8 @@ namespace Assets.Code
         private Vector3 _direction;
         private ProjectileWeapon _weapon;
 
+        public ParticleSystem Effect;
+
         public void Init(ProjectileWeapon weapon, Vector3 direction)
         {
             transform.LookAt(direction + transform.position);
@@ -31,11 +33,11 @@ namespace Assets.Code
 
         public void OnTriggerEnter(Collider other)
         {
-            Debug.Log(other.gameObject);
             var destroyable = other.GetComponent<Destroyable>();
             if (destroyable == null)
                 return;
             destroyable.TakeDamage((int)_weapon.Damage, gameObject);
+            Instantiate(Effect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

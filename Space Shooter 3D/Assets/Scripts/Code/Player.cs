@@ -21,7 +21,6 @@ namespace Assets.Code
 
         private IEnumerable<BasicWeaponMount> _mounts;
         
-
         private void Awake()
         {
             camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();

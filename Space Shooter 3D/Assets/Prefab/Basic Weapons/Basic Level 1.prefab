@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75dcf78e3edbc345b1b29e4aef81296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 114571425650334038, guid: 2d82185313c1ab643be510ab212828e1, type: 2}
+  prefab: {fileID: 114878711311042610, guid: 2d82185313c1ab643be510ab212828e1, type: 2}
   Speed: 200
   Damage: 35
   FireRate: 0.09
