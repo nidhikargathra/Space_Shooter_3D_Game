@@ -8,20 +8,20 @@ public class EnemySpawner : MonoBehaviour {
 
     void Start()
     {
-    //    StartSpawning();    
+        StartSpawning();    
     }
 
-    private void OnEnable()
-    {
-        EventManager.onStartGame += StartSpawning;
-        EventManager.onPlayerDeath += StopSpawning;
-    }
+    //private void OnEnable()
+    //{
+    //    EventManager.onStartGame += StartSpawning;
+    //    EventManager.onPlayerDeath += StopSpawning;
+    //}
 
-    private void OnDisable()
-    {
-        EventManager.onStartGame -= StartSpawning;
-        EventManager.onPlayerDeath -= StopSpawning;
-    }
+    //private void OnDisable()
+    //{
+    //    EventManager.onStartGame -= StartSpawning;
+    //    EventManager.onPlayerDeath -= StopSpawning;
+    //}
     void SpawnEnemy()
     {
         Instantiate(enemyPrefab, transform.position, Quaternion.identity);
