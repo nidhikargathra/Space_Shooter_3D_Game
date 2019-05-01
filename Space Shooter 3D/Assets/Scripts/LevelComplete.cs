@@ -13,17 +13,12 @@ public class LevelComplete : MonoBehaviour
     }
     private void OnTriggerEnter(Collider col)
     {
-        if (!gotHit && col.transform.CompareTag("Player"))
-        {
-            //load next level
-            gotHit = true;
-            Debug.Log("level 1 complete");
-            StartCoroutine("LoadSceneAfterWait");
-        }
-    }
-    public IEnumerator LoadSceneAfterWait()
-    {
-        yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("Level2");
+        //if (!gotHit && col.transform.CompareTag("Player"))
+        //{
+        //    //load next level
+        //    gotHit = true;
+        //    Debug.Log("level 1 complete");
+        //    SceneManager.LoadScene("Level2");
+        //}
     }
 }

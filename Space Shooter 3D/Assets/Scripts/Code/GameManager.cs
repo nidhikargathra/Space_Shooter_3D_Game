@@ -7,7 +7,7 @@ namespace Assets.Code
 {
     public class GameManager : MonoBehaviour
     {
-        public bool IsDebug { get;  set; }
+        public bool IsDebug { get; set; }
         public int Points;
         public bool DidWin { get; private set; }
 
@@ -31,12 +31,12 @@ namespace Assets.Code
             }
 
             DidWin = didWin;
-            SceneManager.LoadScene("EndScreen");
+            StartCoroutine("LoadSceneAfterWait");
         }
         public IEnumerator LoadSceneAfterWait()
         {
             yield return new WaitForSeconds(3);
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene("EndSCreen");
         }
     }
 }

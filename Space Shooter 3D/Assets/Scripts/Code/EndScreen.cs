@@ -13,10 +13,16 @@ namespace Assets.Code
         private string _name = "";
         private bool _hasAddedScore;
 
-        private const float Width = 1920;
-        private const float Height = 1080;
+        private float Width;
+        private float Height;
 
         private GUIStyle _buttonStyle, _textFieldStyle;
+        private void Awake()
+        {
+            Width = Screen.currentResolution.width;
+            Height = Screen.currentResolution.height;
+        }
+
 
         private void OnGUI()
         {
@@ -45,7 +51,8 @@ namespace Assets.Code
             else
                 GUI.DrawTexture(new Rect(0, 0, Width, Height), LoseBackground);
 
-            GUILayout.BeginArea(new Rect(496, 272, 600, 538));
+            GUILayout.BeginArea(new Rect(496 * Width / 1920, 272 * Height / 1080, 600 * Width / 1920, 538 * Height / 1080));
+            //GUILayout.BeginArea(new Rect(496, 272, 600, 538));
 
             GUILayout.BeginVertical();
 
@@ -79,10 +86,12 @@ namespace Assets.Code
 
             GUILayout.EndArea();
 
-            if(!GameManagerInstance.Instance.DidWin && GUI.Button(new Rect(843, 840, 240, 86), ""))
+            if(!GameManagerInstance.Instance.DidWin && GUI.Button
+                (new Rect(843 * Width / 1920, 840 * Height / 1080, 240 * Width / 1920, 86 * Height / 1080), ""))
                 SceneManager.LoadScene("StartScreen");
 
-            if (GameManagerInstance.Instance.DidWin && GUI.Button(new Rect(822, 895, 240, 86), ""))
+            if (GameManagerInstance.Instance.DidWin && GUI.Button
+                (new Rect(822 * Width / 1920, 895 * Height / 1080, 240 * Width / 1920, 86 * Height / 1080), ""))
                 SceneManager.LoadScene("StartScreen");
         }
     }

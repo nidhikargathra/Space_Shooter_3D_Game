@@ -68,7 +68,6 @@ public class Laser : MonoBehaviour {
             
             if(target != null)
             {
-                Debug.Log("taregrt: " + target.name);
                 SpawnExplosion(targetPosition, target);
             }
             lr.SetPosition(0, transform.position);

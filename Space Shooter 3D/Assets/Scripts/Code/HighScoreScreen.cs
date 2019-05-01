@@ -12,8 +12,14 @@ namespace Assets.Code
             TextStyle,
             PointStyle;
 
-        private const float Width = 1920;
-        private const float Height = 1080;
+        private float Width;
+        private float Height;
+
+        private void Awake()
+        {
+            Width = Screen.currentResolution.width;
+            Height = Screen.currentResolution.height;
+        }
 
         public void OnGUI()
         {
@@ -25,7 +31,8 @@ namespace Assets.Code
 
             var scores = HighScoreManager.Instance.Scores;
 
-            GUILayout.BeginArea(new Rect(173, 186, 1035, 724));
+            GUILayout.BeginArea(new Rect(173 * Width / 1920, 186 * Height / 1080, 1035 * Width / 1920, 724 * Height / 1080));
+            //GUILayout.BeginArea(new Rect(173, 186, 1035, 724));
 
             foreach (var score in scores)
             {
@@ -39,7 +46,7 @@ namespace Assets.Code
 
             GUILayout.EndArea();
 
-            if (GUI.Button(new Rect(845, 960, 205, 71), ""))
+            if (GUI.Button(new Rect(845 * Width / 1920, 960 * Height / 1080, 205 * Width / 1920, 71 * Height / 1080), ""))
                 UnityEngine.SceneManagement.SceneManager.LoadScene("StartScreen");
         }
     }
