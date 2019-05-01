@@ -92,6 +92,8 @@
     <Compile Include="Assets\Scripts\Code\HighScore.cs" />
     <Compile Include="Assets\Scripts\Code\HighScoreManager.cs" />
     <Compile Include="Assets\Scripts\Code\HighScoreScreen.cs" />
+    <Compile Include="Assets\Scripts\Code\Level1Instr.cs" />
+    <Compile Include="Assets\Scripts\Code\Level2Instr.cs" />
     <Compile Include="Assets\Scripts\Code\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Code\Player.cs" />
     <Compile Include="Assets\Scripts\Code\PlayerCamera.cs" />

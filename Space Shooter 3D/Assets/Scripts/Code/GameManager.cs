@@ -36,7 +36,7 @@ namespace Assets.Code
         public IEnumerator LoadSceneAfterWait()
         {
             yield return new WaitForSeconds(3);
-            SceneManager.LoadScene("EndSCreen");
+            SceneManager.LoadScene("EndScreen");
         }
     }
 }
