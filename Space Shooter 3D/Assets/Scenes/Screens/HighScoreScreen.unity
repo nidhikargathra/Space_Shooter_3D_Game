@@ -330,7 +330,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: a30f933bed2f6504bae572c0ef6aaeb7, type: 3}
-    m_FontSize: 32
+    m_FontSize: 64
     m_FontStyle: 0
     m_Alignment: 0
     m_WordWrap: 0
@@ -397,7 +397,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 0}
-    m_FontSize: 32
+    m_FontSize: 64
     m_FontStyle: 0
     m_Alignment: 0
     m_WordWrap: 0

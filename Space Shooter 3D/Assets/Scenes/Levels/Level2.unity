@@ -451,15 +451,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4979331514896658, guid: 751aeaf58d3e5b04c93e73becf5410e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 947
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4979331514896658, guid: 751aeaf58d3e5b04c93e73becf5410e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 120.1
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4979331514896658, guid: 751aeaf58d3e5b04c93e73becf5410e8, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 683.6
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 4979331514896658, guid: 751aeaf58d3e5b04c93e73becf5410e8, type: 2}
       propertyPath: m_LocalRotation.x
@@ -718,7 +718,7 @@ Prefab:
     - target: {fileID: 114123019402970194, guid: 78afe6145cb8f6c4ab10bbd9f49c8494,
         type: 2}
       propertyPath: regenerateAmount
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114123019402970194, guid: 78afe6145cb8f6c4ab10bbd9f49c8494,
         type: 2}
@@ -1164,15 +1164,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4732136134937890, guid: d23304be55d3d8a44ae8bcd8f92a4d94, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1032.6
       objectReference: {fileID: 0}
     - target: {fileID: 4732136134937890, guid: d23304be55d3d8a44ae8bcd8f92a4d94, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4732136134937890, guid: d23304be55d3d8a44ae8bcd8f92a4d94, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 75
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 4732136134937890, guid: d23304be55d3d8a44ae8bcd8f92a4d94, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1201,6 +1201,11 @@ Prefab:
     - target: {fileID: 1689131132065490, guid: d23304be55d3d8a44ae8bcd8f92a4d94, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114322804826978994, guid: d23304be55d3d8a44ae8bcd8f92a4d94,
+        type: 2}
+      propertyPath: spawnTimer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d23304be55d3d8a44ae8bcd8f92a4d94, type: 2}

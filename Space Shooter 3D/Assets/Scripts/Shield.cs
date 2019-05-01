@@ -29,8 +29,13 @@ public class Shield : MonoBehaviour
 
         if (currHealth > maxHealth)
             currHealth = maxHealth;
+        Debug.Log("" + gameObject.name + " curr: " + currHealth + " maxh: " + maxHealth);
         EventManager.TakeDamage((float)currHealth / (float)maxHealth);
-        _shieldUI.UpdateShieldDisplay((float)currHealth / (float)maxHealth);
+        if (gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("player");
+            _shieldUI.UpdateShieldDisplay((float)currHealth / (float)maxHealth);
+        }
     }
 
     public void TakeDamage(int dmg = 100)
@@ -38,14 +43,23 @@ public class Shield : MonoBehaviour
         currHealth -= dmg;
         if (currHealth < 0)
             currHealth = 0;
-        EventManager.TakeDamage((float)currHealth / (float)maxHealth);
+        Debug.Log(""+gameObject.name+" curr: " + currHealth + " maxh: " + maxHealth);
 
+        EventManager.TakeDamage((float)currHealth / (float)maxHealth);
+        if (gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("player");
+            _shieldUI.UpdateShieldDisplay((float)currHealth / (float)maxHealth);
+        }
         if (currHealth < 1)
         {
             Debug.Log("I b ded :( :" + gameObject.name);
-            EventManager.PlayerDeath();
             GetComponent<Explosion>().BlowUp();
-            _manager.PlayerDied();
+            if (gameObject.tag.Equals("Player"))
+            {
+                EventManager.PlayerDeath();
+                _manager.PlayerDied();
+            }
 
         }
     }

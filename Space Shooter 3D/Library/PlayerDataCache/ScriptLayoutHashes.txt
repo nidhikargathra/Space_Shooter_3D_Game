@@ -5,6 +5,8 @@ SceneListBegin?
 Assets/Scenes/Screens/StartScreen.unity
 Assets/Scenes/Screens/EndScreen.unity
 Assets/Scenes/Screens/HighScoreScreen.unity
+Assets/Scenes/Screens/Level1Instr.unity
+Assets/Scenes/Screens/Level2Instr.unity
 Assets/Scenes/Levels/Level1.unity
 Assets/Scenes/Levels/Level2.unity
 SceneListEnd?
@@ -169,6 +171,7 @@ c403a7aa8bafcd6e9707fe0b620743dd Assembly-CSharp.dll:MirzaBeig.ParticleSystems.D
 a67c0805e2f8d4bd20205030b760651f Assembly-CSharp.dll:Assets.Code.Projectile1
 50a0fa002cfc67638c87a901e46b763e Assembly-CSharp.dll:TMPro.Examples.TMP_TextSelector_B
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelComplete
+b91ea887f99f11135ed181d1b8d8deb7 Assembly-CSharp.dll:Assets.Code.TimerUI
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 1153ee1cb59524d3522244e9c7f3fed6 Assembly-CSharp.dll:.Laser
 b9332c0eee630779376843b5343eb250 Assembly-CSharp.dll:TMPro.Examples.TMP_TextInfoDebugTool
@@ -290,4 +293,5 @@ b107fdbf103d95a8c651c4b2629924bf Assembly-CSharp.dll:.PlayerMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Thruster
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-b91ea887f99f11135ed181d1b8d8deb7 Assembly-CSharp.dll:Assets.Code.TimerUI
+5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level1Instr
+5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level2Instr

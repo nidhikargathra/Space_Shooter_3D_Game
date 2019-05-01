@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Screens/HighScoreScreen.unity
     guid: f93d0ca95c9730e439cd33fda14d3936
   - enabled: 1
+    path: Assets/Scenes/Screens/Level1Instr.unity
+    guid: aaeea5893cd12e748bf254cbe3237f63
+  - enabled: 1
+    path: Assets/Scenes/Screens/Level2Instr.unity
+    guid: 9a0a0e44633aba34292495615bdb84c0
+  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: 71d72a5abfbec304d81dfeac0fa740ed
   - enabled: 1
