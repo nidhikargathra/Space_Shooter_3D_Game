@@ -23,21 +23,23 @@ public class Explosion : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("heeeeeeee");
         foreach (ContactPoint contact in collision.contacts)
             IveBeenHit(contact.point);
     }
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    IveBeenHit(other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position));
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("qqqqq");
+        IveBeenHit(other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position));
+    }
     public void AddForce(Vector3 hitPosition, Transform hitSource)
     {
         IveBeenHit(hitPosition);
-        //Debug.LogWarning("AddForce Called: "+ gameObject.name + " >> " + hitSource.name);
+        Debug.LogWarning("ivebeen hit Called: "+ gameObject.name + " >> " + hitSource.name);
         if (rigidBody == null)
             return;
 
-        Vector3 forceVector = (hitSource.position - hitPosition).normalized;
+        //Vector3 forceVector = (hitSource.position - hitPosition).normalized;
         //Debug.Log(forceVector * laserHitModifier);
         //rigidBody.AddForceAtPosition(-forceVector * laserHitModifier, hitPosition, ForceMode.Impulse);
     }

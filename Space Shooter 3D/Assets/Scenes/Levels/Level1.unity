@@ -970,7 +970,8 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114628156835334684, guid: 8684134584658b74085a1ebcad573e23, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8684134584658b74085a1ebcad573e23, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1521516134 stripped
@@ -1028,16 +1029,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4449011315063344, guid: 78afe6145cb8f6c4ab10bbd9f49c8494, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54040355111646128, guid: 78afe6145cb8f6c4ab10bbd9f49c8494,
-        type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54040355111646128, guid: 78afe6145cb8f6c4ab10bbd9f49c8494,
-        type: 2}
-      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

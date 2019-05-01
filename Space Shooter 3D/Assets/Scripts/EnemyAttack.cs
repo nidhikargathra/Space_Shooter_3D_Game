@@ -13,9 +13,11 @@ public class EnemyAttack : MonoBehaviour
 
     Vector3 hitPosition;
     private Destroyable _destroyable;
+    private LevelManager _levelManager;
 
     private void Awake()
     {
+        _levelManager = FindObjectOfType<LevelManager>();
         _destroyable = GetComponentInParent<Destroyable>();
     }
     private void Update()
@@ -83,13 +85,13 @@ public class EnemyAttack : MonoBehaviour
     {
         var source = GameExtensions.PlayClipAtPoint(transform.position, ExplosionClip);
         source.rolloffMode = AudioRolloffMode.Linear;
-
+        _levelManager.EnemyDestroyedByPlayer();
         //Instantiate(Effect, transform.position, transform.rotation);
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("on triggerin enemy by: "+other.name);
+        //Debug.Log("on triggerin enemy by: "+other.name);
         var shield = other.GetComponentInParent<Shield>();
         if (shield == null)
             return;
@@ -100,7 +102,7 @@ public class EnemyAttack : MonoBehaviour
     }
     public void TookDamage(int damage)
     {
-        Debug.Log("enemy in tookdamage");
+        //Debug.Log("enemy in tookdamage");
         var shield = GetComponentInParent<Shield>();
         if (shield == null)
             return;

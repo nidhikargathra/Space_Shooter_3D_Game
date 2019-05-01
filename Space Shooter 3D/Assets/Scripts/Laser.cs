@@ -52,7 +52,7 @@ public class Laser : MonoBehaviour {
 
     void SpawnExplosion(Vector3 hitPosition, Transform target)
     {
-        Explosion temp = target.GetComponent<Explosion>();
+        Explosion temp = target.GetComponentInParent<Explosion>();
         if (temp != null)
             temp.AddForce(hitPosition, transform);
     }
@@ -65,8 +65,12 @@ public class Laser : MonoBehaviour {
     {
         if (canFire)
         {
+            
             if(target != null)
+            {
+                Debug.Log("taregrt: " + target.name);
                 SpawnExplosion(targetPosition, target);
+            }
             lr.SetPosition(0, transform.position);
             lr.SetPosition(1, targetPosition);
             lr.enabled = true;

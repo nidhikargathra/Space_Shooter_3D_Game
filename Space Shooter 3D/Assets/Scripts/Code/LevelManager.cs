@@ -10,12 +10,21 @@ namespace Assets.Code
         public float TimeLeft;
         public string NextLevel;
 
+        private float maxTime;
+        private TimerUI _timerUI;
+        private void Start()
+        {
+            _timerUI = FindObjectOfType<TimerUI>();
+            maxTime = TimeLeft;
+        }
         private void Update()
         {
             TimeLeft -= Time.deltaTime;
 
             if (TimeLeft < 0)
                 GameManagerInstance.Instance.EndGame(false);
+
+            _timerUI.UpdateTimerDisplay(TimeLeft, maxTime);
         }
 
         public void AsteroidDestroyedByPlayer(Asteroid1 asteroid)
@@ -40,6 +49,14 @@ namespace Assets.Code
             }
 
             TimeLeft += waypoint.TimeModifier;
+            if (maxTime < TimeLeft)
+                maxTime = TimeLeft;
+            
+        }
+
+        public void EnemyDestroyedByPlayer()
+        {
+            GameManagerInstance.Instance.Points += 500;
         }
 
         public void PlayerDied()

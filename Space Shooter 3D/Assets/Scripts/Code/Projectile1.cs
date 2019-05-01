@@ -33,11 +33,11 @@ namespace Assets.Code
 
         public void OnTriggerEnter(Collider other)
         {
-            Debug.Log("projectile on trigger by "+other.name);
+            //Debug.Log("projectile on trigger by "+other.name);
             var destroyable = other.GetComponentInParent<Destroyable>();
             if (destroyable == null)
                 return;
-            Debug.Log("weapon dam: "+ (int)_weapon.Damage);
+            //Debug.Log("weapon dam: "+ (int)_weapon.Damage);
             destroyable.TakeDamage((int)_weapon.Damage, gameObject);
             Instantiate(Effect, transform.position, transform.rotation);
             Destroy(gameObject);
