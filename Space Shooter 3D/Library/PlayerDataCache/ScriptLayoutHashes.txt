@@ -140,6 +140,7 @@ c1a19abb55893aa234f1cf2fcf45e048 Assembly-CSharp.dll:.EnemyMovement
 1c859dfdbbcb0df99ff62d9e20d40887 Assembly-CSharp.dll:.GunShoot
 0bf84033cb5ed77140f5fa29e4c7332b Assembly-CSharp.dll:MirzaBeig.ParticleSystems.Demos.DemoManager
 3cec46facae45921257202a20c50db64 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample
+5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level2Instr
 f4bd1aee67eeef7953cce6c44588b3d7 TextMeshPro-2017.3-Runtime.dll:TMPro.TextContainer
 bf22e89fa4b77e86d45d7ae313079474 TextMeshPro-2017.3-Runtime.dll:TMPro.TextMeshPro
 bcada89394089914d10ff70647b120da TextMeshPro-2017.3-Runtime.dll:TMPro.TextMeshProUGUI
@@ -272,6 +273,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9e5e5adf07f5412ddf7447c336fc9b2e Assembly-CSharp.dll:.Rocket
 48a9dee325686d1924a2646b71c83f08 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level1Instr
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.TextConsoleSimulator
 54782064e53cc51a12e6ae84273b6f78 Assembly-CSharp.dll:.Shield
 6dd3435cd875429f5d29302294d88b19 Assembly-CSharp.dll:Assets.Code.Player
@@ -293,5 +295,3 @@ b107fdbf103d95a8c651c4b2629924bf Assembly-CSharp.dll:.PlayerMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Thruster
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level1Instr
-5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level2Instr
