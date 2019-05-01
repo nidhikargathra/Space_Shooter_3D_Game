@@ -8,6 +8,7 @@ TagManager:
   - Pickup
   - Muzzle
   - Orb
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

@@ -30,7 +30,7 @@ public class Shield : MonoBehaviour
         EventManager.TakeDamage((float)currHealth / (float)maxHealth);
     }
 
-    public void TakeDamage(int dmg = 100)
+    public void TakeDamage(int dmg = 10)
     {
         currHealth -= dmg;
         if (currHealth < 0)
