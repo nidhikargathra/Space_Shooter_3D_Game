@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/nidhi/Documents/UMass/590G - GP/Assignments/Assignment2/Space Shooter 3D/Builds/Builds.exe
+C:/Users/nidhi/Documents/UMass/590G - GP/Assignments/Assignment2/Space Shooter 3D/New build/New build.exe
 SceneListBegin?
 Assets/Scenes/Screens/StartScreen.unity
 Assets/Scenes/Screens/EndScreen.unity
@@ -27,7 +27,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 ec9dac0f895907dd36df2860a77c0423 Assembly-CSharp.dll:Assets.Code.WaypointManager
 1d7080e0043f81d7d254bae04a2a653c Assembly-CSharp.dll:Assets.Code.AutoDestroyParticleSystem
-9e5e5adf07f5412ddf7447c336fc9b2e Assembly-CSharp.dll:.Shooter
 340e178ac2658e6dd5dd37b5835e247e Assembly-CSharp.dll:.LookCamera
 9776999722e48fd52733e0cda1b142cd Assembly-CSharp.dll:MirzaBeig.ParticleSystems.Demos.CameraShake
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -62,8 +61,6 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-2adff3b9ccf5c638a573d50529d66b55 Assembly-CSharp.dll:.Pickup
-2eca5685d03560c5733a3ec36e39ebcd Assembly-CSharp.dll:.Score
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -101,7 +98,6 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 a52f682a2630032c7d843c945b7c2b22 Assembly-CSharp.dll:Assets.Code.LevelManager
 765037da3d8faeee91e39d672b924c61 Assembly-CSharp.dll:.EnvMapAnimator
 b3260f004f36388dc8a374c474dbf0a3 Assembly-CSharp.dll:MirzaBeig.ParticleSystems.Demos.LoopingParticleSystemsManager
-1f5d0aa0772dd4bb40cd077052e8bf5c Assembly-CSharp.dll:.Projectile
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -136,7 +132,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 ec22fb58bf48875b95c0ea7d9997a11e Assembly-CSharp.dll:MirzaBeig.ParticleSystems.AnimatedLight
 c1a19abb55893aa234f1cf2fcf45e048 Assembly-CSharp.dll:.EnemyMovement
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_PhoneNumberValidator
-08f50713c1d856b6ffc4173bcd07d20d Assembly-CSharp.dll:.AsteroidManager
 1c859dfdbbcb0df99ff62d9e20d40887 Assembly-CSharp.dll:.GunShoot
 0bf84033cb5ed77140f5fa29e4c7332b Assembly-CSharp.dll:MirzaBeig.ParticleSystems.Demos.DemoManager
 3cec46facae45921257202a20c50db64 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample
@@ -196,7 +191,6 @@ e763036081c708b34f78f5a56f72c23d TextMeshPro-2017.3-Runtime.dll:TMPro.TMP_StyleS
 22bb40270d2bfc0d0884e2aefd3d1c60 TextMeshPro-2017.3-Runtime.dll:TMPro.TMP_Text
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.TMP_TextSelector_A
 b900ead596b2fb1093b31cb63a678767 Assembly-CSharp.dll:TMPro.Examples.TextMeshProFloatingText
-73a4b2c8c01b0e88f61e65dd6dd07bbb Assembly-CSharp.dll:.PlayerInput
 dad1c1272dfe1898bb613dcb2631bcce Assembly-CSharp.dll:TMPro.Examples.Benchmark02
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-Editor.dll:TMPro.EditorUtilities.DropdownEditor
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-Editor.dll:TMPro.EditorUtilities.TMP_ColorGradientEditor
@@ -245,7 +239,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 62229a3e4d53ca59bec192e89627ed52 Assembly-CSharp.dll:TMPro.Examples.CameraController
 58f29f62d0f0ae2e445f203f19cdfa1d Assembly-CSharp.dll:.Timer
 72ac9a8c5004e51ad49bb2569366ff5b Assembly-CSharp.dll:Assets.Code.GameManager
-df6eef0d5b8c7fbe83d490feb954c30e Assembly-CSharp.dll:.Asteroid
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -270,7 +263,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 1cd4893b18ef6c9e1612214d23ea08a3 Assembly-CSharp.dll:.ChatController
 91333b98e294432cb6bbf7c67b32b260 Assembly-CSharp.dll:.ExtinguishableFire
-9e5e5adf07f5412ddf7447c336fc9b2e Assembly-CSharp.dll:.Rocket
 48a9dee325686d1924a2646b71c83f08 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 5c30d142d8d7067a91fd8f6426a2df86 Assembly-CSharp.dll:.Level1Instr
@@ -290,7 +282,6 @@ c07d7fd9436179be2855680302d29ba2 Assembly-CSharp.dll:MirzaBeig.ParticleSystems.D
 b3260f004f36388dc8a374c474dbf0a3 Assembly-CSharp.dll:MirzaBeig.ParticleSystems.Demos.ParticleManager
 a69b3ee0402770d02d1c122324e4b00e Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
 048db0f5d0a94a3beae1cba85ef9529d Assembly-CSharp.dll:Assets.Code.Destroyable
-b107fdbf103d95a8c651c4b2629924bf Assembly-CSharp.dll:.PlayerMovement
 0251217b95be1455e60d30ba3d01077e Assembly-CSharp.dll:Assets.Code.Waypoint
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Thruster
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
