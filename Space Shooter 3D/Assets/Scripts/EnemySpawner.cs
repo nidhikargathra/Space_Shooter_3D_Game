@@ -5,12 +5,28 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] float spawnTimer = 5f;
+    [SerializeField] float TimeToStopSpawning = 30f;
 
+    private float timePassed;
+    private bool keepTime;
     void Start()
     {
+        keepTime = true;
+        timePassed = 0;
         StartSpawning();    
     }
-
+    private void Update()
+    {
+        if (keepTime)
+        {
+            timePassed += Time.deltaTime;
+            if (timePassed >= TimeToStopSpawning)
+            {
+                StopSpawning();
+                keepTime = false;
+            }
+        }
+    }
     //private void OnEnable()
     //{
     //    EventManager.onStartGame += StartSpawning;

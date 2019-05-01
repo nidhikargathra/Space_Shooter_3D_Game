@@ -13,7 +13,7 @@ namespace Assets.Code
         {
             Health -= damage;
 
-            SendMessage("Took Damage", from, SendMessageOptions.DontRequireReceiver);
+            SendMessage("TookDamage", damage, SendMessageOptions.DontRequireReceiver);
 
             if (Health > 0)
                 return;

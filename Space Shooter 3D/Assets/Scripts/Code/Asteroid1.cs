@@ -92,12 +92,12 @@ namespace Assets.Code
 
         public void OnTriggerEnter(Collider other)
         {
-            var shield = other.GetComponentInParent<Shield>();
+            var shield = other.GetComponentInParent<Shield>(); //for player damage
             if (shield == null)
                 return;
             shield.TakeDamage(Level * 50 / 3);
 
-            _destroyable.TakeDamage(_destroyable.Health, other.gameObject);
+            //_destroyable.TakeDamage(_destroyable.Health, other.gameObject);
         }
     }
 }

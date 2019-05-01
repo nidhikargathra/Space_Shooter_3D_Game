@@ -26,7 +26,7 @@ namespace Assets.Code
         {
             if (IsDebug)
             {
-                Debug.Log("The game ended! ");
+                //Debug.Log("The game ended! ");
                 return;
             }
 

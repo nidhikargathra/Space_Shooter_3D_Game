@@ -39,7 +39,7 @@ public class Explosion : MonoBehaviour {
 
         Vector3 forceVector = (hitSource.position - hitPosition).normalized;
         //Debug.Log(forceVector * laserHitModifier);
-        rigidBody.AddForceAtPosition(-forceVector * laserHitModifier, hitPosition, ForceMode.Impulse);
+        //rigidBody.AddForceAtPosition(-forceVector * laserHitModifier, hitPosition, ForceMode.Impulse);
     }
 
     public void BlowUp()
