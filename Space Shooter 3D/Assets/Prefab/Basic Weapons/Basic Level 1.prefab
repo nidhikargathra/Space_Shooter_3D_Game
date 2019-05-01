@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 114878711311042610, guid: 2d82185313c1ab643be510ab212828e1, type: 2}
   Sound: {fileID: 8300000, guid: f255d686d91d56c439d7c4adaa8b2dd1, type: 3}
-  Speed: 200
-  Damage: 35
+  Speed: 500
+  Damage: 100
   FireRate: 0.09
   TimeToLive: 2

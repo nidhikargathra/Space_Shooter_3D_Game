@@ -27,7 +27,7 @@ namespace Assets.Code
         public PlayerController(Player player)
         {
             MaxVariableVelocity = 20f;
-            Acceleration = 70f;
+            Acceleration = 100f;
             VelocityDamp = 20f;
             RotationSpeed = 0.01f;
             MouseSensitivity = new Vector2(700, 700);
