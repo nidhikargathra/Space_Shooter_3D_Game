@@ -394,10 +394,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  movementSpeed: 15
+  movementSpeed: 25
   rotationalDamp: 1.25
   raycastOffset: 5
-  detectionDistance: 30
+  detectionDistance: 20
 --- !u!114 &114562422159411710
 MonoBehaviour:
   m_ObjectHideFlags: 1
