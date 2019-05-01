@@ -42,7 +42,10 @@ namespace Assets.Code
                     if (GameManagerInstance.Instance.IsDebug)
                         Debug.Log("You are moving on to the next level!");
                     else
-                        SceneManager.LoadScene(NextLevel);
+                    {
+                        StartCoroutine("LoadSceneAfterWait");
+                        
+                    }
                 }
                 else
                     GameManagerInstance.Instance.EndGame(true);
@@ -62,6 +65,12 @@ namespace Assets.Code
         public void PlayerDied()
         {
             GameManagerInstance.Instance.EndGame(false);
+        }
+
+        public IEnumerator LoadSceneAfterWait()
+        {
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene(NextLevel);
         }
     }
 

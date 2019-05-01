@@ -11,10 +11,12 @@ public class Shield : MonoBehaviour
     [SerializeField] int regenerateAmount = 1;
 
     private LevelManager _manager;
+    private ShieldUI _shieldUI;
 
     private void Start()
     {
         _manager = FindObjectOfType<LevelManager>();
+        _shieldUI = FindObjectOfType<ShieldUI>();
         currHealth = maxHealth;
         InvokeRepeating("Regenerate", regenerationRate, regenerationRate);
     }
@@ -28,9 +30,10 @@ public class Shield : MonoBehaviour
         if (currHealth > maxHealth)
             currHealth = maxHealth;
         EventManager.TakeDamage((float)currHealth / (float)maxHealth);
+        _shieldUI.UpdateShieldDisplay((float)currHealth / (float)maxHealth);
     }
 
-    public void TakeDamage(int dmg = 10)
+    public void TakeDamage(int dmg = 100)
     {
         currHealth -= dmg;
         if (currHealth < 0)

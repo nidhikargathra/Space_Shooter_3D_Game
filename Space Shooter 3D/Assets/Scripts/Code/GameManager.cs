@@ -33,5 +33,10 @@ namespace Assets.Code
             DidWin = didWin;
             SceneManager.LoadScene("EndScreen");
         }
+        public IEnumerator LoadSceneAfterWait()
+        {
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene("EndScreen");
+        }
     }
 }

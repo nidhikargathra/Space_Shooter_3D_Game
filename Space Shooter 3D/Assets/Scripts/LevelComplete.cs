@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelComplete : MonoBehaviour {
+public class LevelComplete : MonoBehaviour
+{
 
     private bool gotHit;
     private void Start()
@@ -17,7 +18,12 @@ public class LevelComplete : MonoBehaviour {
             //load next level
             gotHit = true;
             Debug.Log("level 1 complete");
-            SceneManager.LoadScene("Level2");
+            StartCoroutine("LoadSceneAfterWait");
         }
+    }
+    public IEnumerator LoadSceneAfterWait()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Level2");
     }
 }

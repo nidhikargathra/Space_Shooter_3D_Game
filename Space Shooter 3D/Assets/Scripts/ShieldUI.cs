@@ -11,17 +11,17 @@ public class ShieldUI : MonoBehaviour {
         maxWidth = barRectTransform.rect.width;
     }
 
-    void OnEnable()
-    {
-        EventManager.onTakeDamage += UpdateShieldDisplay;
-    }
+    //void OnEnable()
+    //{
+    //    EventManager.onTakeDamage += UpdateShieldDisplay;
+    //}
 
-    void OnDisable()
-    {
-        EventManager.onTakeDamage -= UpdateShieldDisplay;
-    }
+    //void OnDisable()
+    //{
+    //    EventManager.onTakeDamage -= UpdateShieldDisplay;
+    //}
 
-    void UpdateShieldDisplay(float percentage)
+    public void UpdateShieldDisplay(float percentage)
     {
         barRectTransform.sizeDelta = new Vector2(maxWidth * percentage, 10f); 
     }
